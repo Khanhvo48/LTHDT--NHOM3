@@ -1,20 +1,21 @@
+package Pack;
 public class Sach {
-		private String maSach;
-		private String tieuDe;
-		private String tacGia;
-		private int namXuatBan;
-		private int soLuong;
+		public String maSach;
+		public String tieuDe;
+		public String tacGia;
+		public int namXuatBan;
+		public int soLuong;
 		
-		void setmaSach(String maSach) {
+		void setMaSach(String maSach) {
 			this.maSach=maSach;
 		}
-		String getmaSach() {
+		String getMaSach() {
 			return this.maSach;
 		}
-		void settieuDe(String tieuDe) {
+		void setTieuDe(String tieuDe) {
 			this.tieuDe=tieuDe;
 		}
-		String gettieuDe() {
+		String getTieuDe() {
 			return this.tieuDe;
 		}
 		void setTacGia(String tacGia) {
@@ -29,10 +30,10 @@ public class Sach {
 		int getNamXuatBan() {
 			return this.namXuatBan;
 		}
-		void setsoLuong(int soLuong) {
+		void setSoLuong(int soLuong) {
 			this.soLuong=soLuong;
 		}
-		int getsoLuong() {
+		int getSoLuong() {
 			return this.soLuong;
 		}
 		public Sach(String maSach, String tieuDe, String tacGia,int namXuatBan, int soLuong) {
@@ -44,11 +45,11 @@ public class Sach {
 		}
 		public Sach() {
 		}
-		void inThongTin() {
-			System.out.println("Ma Sach: "+this.maSach);
-			System.out.println("Tieu De:" +this.tieuDe);
-			System.out.println("Tac Gia: "+this.tacGia);
-			System.out.println("Nam Xuat Ban: "+this.namXuatBan);
-			System.out.println("So Luong: "+this.soLuong);
-		}
+		public String toString() {
+        return  "maSach='" + this.maSach + '\'' +
+                ", tenSach='" + this.tieuDe + '\'' +
+                ", tacGia='" + this.tacGia + '\'' +
+				", Nam xuat ban=" + this.namXuatBan +
+                ", So luong=" + this.soLuong ;      
+    	}	
 }
