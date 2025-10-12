@@ -68,4 +68,14 @@ public class Sach {
         System.out.println("Năm xuất bản: " + namXuatBan);
         System.out.println("Số lượng: " + soLuong);
     }
+    
+    // Phương thức toString() để hiển thị thông tin cơ bản
+    @Override
+    public String toString() {
+        return "Mã sách: " + maSach + 
+               "\nTiêu đề: " + tieuDe + 
+               "\nTác giả: " + tacGia + 
+               "\nNăm xuất bản: " + namXuatBan + 
+               "\nSố lượng: " + soLuong;
+    }
 }
