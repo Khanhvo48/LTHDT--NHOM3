@@ -73,4 +73,14 @@ public class Sach {
         System.out.println("Số lượng: " + soLuong);
         System.out.println("===========================\n");
     }
+
+        @Override
+    public String toString() {
+        return "Mã sách: " + maSach + 
+               "\nTiêu đề: " + tieuDe + 
+               "\nTác giả: " + tacGia + 
+               "\nNăm xuất bản: " + namXuatBan + 
+               "\nSố lượng: " + soLuong;
+    }
 }
+
