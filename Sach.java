@@ -1,19 +1,18 @@
+
+// Lớp Sach thể hiện thông tin của một cuốn sách
 public class Sach {
 
-    // YÊU CẦU 1 : Các thuộc tính
     private String maSach;
     private String tieuDe;
     private String tacGia;
     private int namXuatBan;
     private int soLuong;
 
-    // YÊU CẦU 4: Constructor
-
-    // Constructor mặc định
+    // Constructor không tham số
     public Sach() {
     }
 
-    // Constructor đầy đủ tham số
+    // Constructor có tham số (dùng để khởi tạo nhanh đối tượng)
     public Sach(String maSach, String tieuDe, String tacGia, int namXuatBan, int soLuong) {
         this.maSach = maSach;
         this.tieuDe = tieuDe;
@@ -22,7 +21,7 @@ public class Sach {
         this.soLuong = soLuong;
     }
 
-    // YÊU CẦU 5: Getter và Setter (tính đóng gói)
+    // Giúp đảm bảo tính đóng gói (Encapsulation)
     public String getMaSach() {
         return maSach;
     }
@@ -63,14 +62,21 @@ public class Sach {
         this.soLuong = soLuong;
     }
 
-    // YÊU CẦU 2: Phương thức hiển thị thông tin
     public void hienThiThongTin() {
-        System.out.println("===== THÔNG TIN SÁCH =====");
         System.out.println("Mã sách: " + maSach);
         System.out.println("Tiêu đề: " + tieuDe);
         System.out.println("Tác giả: " + tacGia);
         System.out.println("Năm xuất bản: " + namXuatBan);
         System.out.println("Số lượng: " + soLuong);
-        System.out.println("===========================\n");
+    }
+    
+    // Phương thức toString() để hiển thị thông tin cơ bản
+    @Override
+    public String toString() {
+        return "Mã sách: " + maSach + 
+               "\nTiêu đề: " + tieuDe + 
+               "\nTác giả: " + tacGia + 
+               "\nNăm xuất bản: " + namXuatBan + 
+               "\nSố lượng: " + soLuong;
     }
 }
